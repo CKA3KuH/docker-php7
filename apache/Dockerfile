@@ -46,6 +46,7 @@ ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
 RUN a2dismod mpm_event && a2enmod mpm_prefork && service apache2 restart
 EXPOSE 80
 
+#adding test file
 RUN echo "<?php phpinfo(); ?>" > /var/www/index.php
 
 # By default, simply start apache.
