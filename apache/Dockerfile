@@ -49,4 +49,4 @@ EXPOSE 80
 RUN echo "<?php phpinfo(); ?>" > /var/www/index.php
 
 # By default, simply start apache.
-CMD /usr/sbin/apache2ctl -D FOREGROUND
+CMD "/usr/sbin/apache2ctl -D FOREGROUND"
